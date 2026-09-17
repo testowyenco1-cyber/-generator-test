@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-enco-blue: #004a99;
+  --color-enco-blue-hover: #003773;
+  --color-enco-navy: #004a99;
+  --color-enco-burgundy: #931A1D;
+  --color-enco-gray-light: #f0f2f5;
+  --color-enco-gray-medium: #e2e8f0;
+  --color-enco-gray-dark: #1e293b;
+}
+
+/* ==========================================================
+   ISOLATED PRINT CONSTRAINTS
+   ========================================================== */
+
+@media print {
+  /* Disable and hide all general stylesheets and inline styles during print except the custom print.css */
+  link[rel="stylesheet"]:not(#print-styles),
+  style:not(#print-styles) {
+    display: none !important;
+  }
+
+  /* Force display only the dedicated print.css sheet */
+  #print-styles {
+    display: block !important;
+  }
+
+  /* Hide app navigation UI elements completely during print */
+  .app-header,
+  .sidebar,
+  .toolbar,
+  .buttons,
+  .navigation,
+  .topbar,
+  .no-print,
+  #offers-sidebar,
+  aside,
+  form,
+  button {
+    display: none !important;
+  }
+}

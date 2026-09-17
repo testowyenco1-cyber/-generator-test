@@ -1,0 +1,98 @@
+[
+  {
+    "id": "enco-sample-stacja-1",
+    "offer_type": "stacja_nz",
+    "numer_oferty": "L. Dz. 154/06/26",
+    "data_oferty": "05.06.2026",
+    "post_temat": "POST 01071",
+    "klient_nazwa": "ELEKTRO-SILVER Sp. z o.o.",
+    "klient_adres": "ul. Łomżyńska 206",
+    "klient_miejscowosc_kod": "18-400 Łomża",
+    "klient_osoba_kontaktowa": "Szanowny Pan Marek Olszyński",
+    "klient_telefon": "538516612",
+    "klient_email": "oferty@elektrosilver.pl",
+    "budynek": {
+      "typ_budynku": "NZ",
+      "wymiary_dlugosc": "2.1",
+      "wymiary_szerokosc": "2.9",
+      "wymiary_wysokosc": "2.66",
+      "przepusty_nn": "12",
+      "przepusty_sn": "2",
+      "przepusty_uziemienie": "3",
+      "powloka_antygraffiti": true,
+      "kolor_obudowa": "RAL 1013",
+      "kolor_slusarka": "RAL 8014",
+      "kolor_dach": "RAL 8014",
+      "kolor_drzwi_kraty": "RAL 8014",
+      "drzwi_typ_ilosc": "1 x drzwi jednoskrzydłowe pełne EI 120 do komory transformatora, 1 x drzwi jednoskrzydłowe pełne do tablicy pomiarowej, 1 x drzwi dwuskrzydłowe z kratą wentylacyjną do pomieszczenia rozdzielnicy SN i nN, 1 x otwór fi 100 zaślepiony demontowalną przegrodą (kable agregatu)",
+      "drzwi_rozmiary": "900x2000 mm / dostosowane do urządzeń",
+      "drzwi_ei": "EI 120 do komory transformatora, pozostałe standard",
+      "kraty_typ_ilosc": "1 x wbudowana w drzwiach rozdzielnicy SN/nN",
+      "wentylatory_nawiew": "0",
+      "wentylatory_wywiew": "0"
+    },
+    "rozdzielnica_sn": {
+      "typ": "AirSet",
+      "ilosc_pol": "3",
+      "pol_liniowe": "Pole liniowe - 2 szt. rozłącznik z uziemnikiem, napęd silnikowy 24V DC, wskaźnik obecności napięcia, styki pomocnicze, przełączniki sterowania",
+      "pol_transformatorowe": "Pole transformatorowe - 1 szt. rozłącznik z uziemnikiem i bezpiecznikami, napęd silnikowy 24V DC, wskaźnik obecności napięcia, styki pomocnicze, przełączniki sterowania",
+      "pol_niestandardowe": "Czujnik ciśnienia powietrza (izolacja powietrzna, bez gazu SF6)\nUzgodniony uzgadniacz faz",
+      "parametry": "Schneider Electric RM AirSet w układzie IIQ - 24kV, 630A, 20kA/1s"
+    },
+    "rozdzielnica_nn": {
+      "ilosc_pol": "12",
+      "rozlacznik_zasilajacy": "1250A",
+      "rozlacznik_niestandardowy_opis": "SIRCO 1250A (bez wkładek bezpiecznikowych)",
+      "przydzial_630a": "9 x ARS3 Smart pro 630A z sygnalizacją przepalenia wkładki bezpiecznikowej",
+      "przydzial_400a": "1 x SL3-3-3: 910A (zasilanie agregatu)",
+      "technologia_smart": true
+    },
+    "telemechanika": {
+      "wlaczone": true,
+      "sterownik": "RTU7M",
+      "sensory": "Szafa telemechaniki wyposażona w sterownik RTU7M oraz sensory prądowe i napięciowe"
+    },
+    "polaczenia_kablowe": {
+      "most_sn": "Most kablowy SN pomiędzy transformatorem a rozdzielnicą SN – kabel 3 x YHAKXS 1 x 70mm² wraz z głowicami",
+      "most_nn": "Most kablowy nN pomiędzy transformatorem a rozdzielnicą nN – kabel 4 x 2 x YKXS 1 x 240mm²",
+      "inne": "Zasilanie potrzeb własnych stacji\nMaszt + antena zewnętrzna"
+    },
+    "dodatkowe_elementy": {
+      "selected": [
+        "Dostawa stacji na plac budowy",
+        "Podkładki antywibracyjne pod transformator (1 kpl.)",
+        "Szafa telemechaniki, sensory prądowe i napięciowe",
+        "Edycja kanału i testy telemechaniki",
+        "Ugadniacz faz do rozdzielnicy SN",
+        "Przepusty systemowe i wkłady uszczelniające"
+      ],
+      "custom": ""
+    },
+    "dostawa_nie_obejmuje": {
+      "selected": [
+        "Dostawy i montażu transformatora",
+        "Przygotowania wykopu, rozładunku stacji i posadowienia w wykopie",
+        "Wyprowadzenia i podłączenia kabli zewnętrznych SN i nN",
+        "Wykonania otoku uziemiającego",
+        "Wkładek bezpiecznikowych nN",
+        "Głowic kablowych do pól liniowych i ograniczników przepięć",
+        "Pomiarów pomontażowych",
+        "Innych, niewymienionych w ofercie elementów"
+      ],
+      "custom": ""
+    },
+    "cena": {
+      "cena_netto": "304000",
+      "cena_brutto": "373920",
+      "waluta": "PLN"
+    },
+    "termin_dostawy": "12 tygodni od zamówienia i zatwierdzenia rysunków produkcyjnych",
+    "warunki_dostawy": "na miejsce wskazane przez Zamawiającego (DAP)",
+    "warunki_gwarancji": "36 miesięcy",
+    "warunki_platnosci": "przelew 30 dni",
+    "waznosc_oferty": "30 dni",
+    "osoba_zatwierdzajaca": "Barbara Baprawska",
+    "osoba_zatwierdzajaca_telefon": "(22) 543 72 31",
+    "osoba_zatwierdzajaca_email": "bbaprawska@grupaenco.pl"
+  }
+]

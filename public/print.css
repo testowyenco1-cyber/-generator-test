@@ -1,0 +1,249 @@
+/* ==========================================================
+   ELEGANT & CLEAN PRINT STYLES (print.css) -> 1:1 Match
+   ========================================================== */
+
+/* Base normalization for A4 printing */
+@media print {
+  body, html {
+    width: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: white !important;
+    background: white !important;
+    color: #1e293b !important;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+#print-container {
+  width: 210mm !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  background: white !important;
+}
+
+/* Header & Footer Flex Layouts */
+#print-container header, .print-page header, .cover-page header {
+  height: 26mm !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: absolute !important;
+  top: 10mm !important;
+  left: 20mm !important;
+  right: 20mm !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
+  box-sizing: border-box !important;
+}
+
+#print-container footer, .print-page footer, .cover-page footer {
+  height: 28mm !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: absolute !important;
+  bottom: 10mm !important;
+  left: 20mm !important;
+  right: 20mm !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-top: 1px dashed #d4d4d8 !important;
+  padding-top: 4px !important;
+  box-sizing: border-box !important;
+}
+
+/* Cover page and print page dimensions */
+.print-page, .cover-page {
+  width: 210mm !important;
+  min-height: 297mm !important;
+  height: 297mm !important;
+  position: relative !important;
+  padding: 38mm 20mm 38mm 20mm !important;
+  page-break-after: always !important;
+  page-break-inside: avoid !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  background-color: white !important;
+  background: white !important;
+  color: #1e293b !important;
+}
+
+/* Global Print Styles */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0 !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .app-header,
+  .sidebar,
+  .toolbar,
+  .buttons,
+  .navigation,
+  .topbar,
+  .no-print,
+  #offers-sidebar,
+  aside,
+  form,
+  button {
+    display: none !important;
+  }
+
+  html, body, #print-container {
+    width: 210mm !important;
+    max-width: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .print-page, .cover-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    padding: 38mm 20mm 38mm 20mm !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #print-container header, .print-page header, .cover-page header {
+    position: absolute !important;
+    top: 10mm !important;
+    left: 20mm !important;
+    right: 20mm !important;
+    height: 26mm !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid #e4e4e7 !important;
+    box-sizing: border-box !important;
+  }
+
+  #print-container footer, .print-page footer, .cover-page footer {
+    position: absolute !important;
+    bottom: 10mm !important;
+    left: 20mm !important;
+    right: 20mm !important;
+    height: 28mm !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-top: 1px dashed #d4d4d8 !important;
+    padding-top: 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  .section {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  .block, .paragraph, p, li, tr, .bg-slate-50\/80, [class*="bg-slate-50"] {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  #print-container .sn-header,
+  #print-container .nn-header,
+  #print-container .tablica-box,
+  #print-container .telemechanika-box,
+  #print-container .cena-jednostkowa-box,
+  #print-container .total-cena-box {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+}
+
+/* General box-sizing */
+#print-container *, #print-container *::before, #print-container *::after {
+  box-sizing: border-box !important;
+}
+
+/* Custom override for unit price box */
+#print-container .cena-jednostkowa-box {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Custom override for total offer price block */
+#print-container div.total-cena-box,
+#print-container .print-page div.total-cena-box,
+#print-container div#preview-section-total-cena div.total-cena-box {
+  display: block !important;
+  width: 420px !important;
+  min-width: 420px !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  text-align: right !important;
+}
+
+#print-container div.total-cena-box .total-cena-label,
+#print-container div.total-cena-box .total-cena-value,
+#print-container div.total-cena-box .total-cena-tax {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  float: none !important;
+  position: static !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  line-height: 1.4 !important;
+}
+
+#print-container div.total-cena-box .total-cena-label {
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  color: #64748b !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+#print-container div.total-cena-box .total-cena-value {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #004a99 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #004a99 !important;
+  text-underline-offset: 4px !important;
+  text-decoration-thickness: 2px !important;
+  margin-bottom: 8px !important;
+}
+
+#print-container div.total-cena-box .total-cena-tax {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #64748b !important;
+  text-transform: uppercase !important;
+  margin-top: 4px !important;
+}
